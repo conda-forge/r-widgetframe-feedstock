@@ -5,11 +5,9 @@ Home: https://github.com/bhaskarvk/widgetframe, https://bhaskarvk.github.io/widg
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-widgetframe-feedstock/blob/master/LICENSE.txt)
 
 Summary: Provides two functions 'frameableWidget()', and 'frameWidget()'. The 'frameableWidget()' is used to add extra code to a 'htmlwidget' which allows is to be rendered correctly inside a responsive 'iframe'. The 'frameWidget()' is a 'htmlwidget' which displays content of another 'htmlwidget' inside a responsive 'iframe'. These functions allow for easier embedding of 'htmlwidgets' in content management systems such as 'wordpress', 'blogger' etc. They also allow for separation of widget content from main HTML content where CSS of the main HTML could interfere with the widget.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-widgetframe` from the `conda-forge` channel can be achieved by add
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-widgetframe` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
